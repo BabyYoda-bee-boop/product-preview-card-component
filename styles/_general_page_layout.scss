@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  block-size: auto;
+  display: block;
+}
+
+.container {
+  min-width: 90%;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
