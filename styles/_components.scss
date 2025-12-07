@@ -1,0 +1,16 @@
+@use "colors" as *;
+@use "./typography" as *;
+@use "./functions" as *;
+
+.btn {
+  font-size: calc(clamp(0.813rem, 0.063vw + 0.8rem, 0.875rem));
+  font-weight: 700;
+  line-height: $flh-110;
+  width: 100%;
+  color: $clr-bg-card;
+  background-color: $clr-accent-500;
+  display: block;
+  padding: em($space-100);
+  border: none;
+  border-radius: $radius-200;
+}

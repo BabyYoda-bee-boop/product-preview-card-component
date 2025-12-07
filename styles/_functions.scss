@@ -1,0 +1,7 @@
+@function rem($unit) {
+  @return $unit * 1rem;
+}
+
+@function em($unit) {
+  @return $unit * 1em;
+}

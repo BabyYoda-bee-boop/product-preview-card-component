@@ -1,0 +1,96 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "functions" as *;
+
+body {
+  background-color: $clr-bg-window;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $clr-grey;
+  font-family: $ff-primary;
+  main {
+    margin-block: auto;
+  }
+}
+
+.product {
+  border-radius: $radius-200;
+  background-color: $clr-bg-card;
+  overflow: hidden;
+  max-width: 600px;
+  
+  @media (max-width: 36em) {
+    flex-direction: column;
+  }
+  &__img {
+    flex: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex: 50%;
+    padding: em($space-200);
+  }
+  &__type {
+    font-family: $ff-primary;
+    font-size: calc(clamp(0.688rem, 0.063vw + 0.675rem, $fs-100));
+    font-weight: 500;
+    line-height: $flh-120;
+    letter-spacing: $fls-500;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: $ff-secondary;
+    font-size: calc(clamp(1.938rem, 0.063vw + 1.925rem, 2rem));
+    line-height: $flh-110;
+    font-weight: 700;
+    color: $clr-black;
+    margin-block: em($space-075);
+  }
+  &__subtitle {
+    font-size: calc(clamp(0.813rem, 0.063vw + 0.8rem, 0.875rem));
+    font-weight: 500;
+    line-height: $flh-160;
+    display: inline-block;
+  }
+  &__price {
+    font-family: $ff-secondary;
+    font-size: $fs-600;
+    font-weight: 700;
+    line-height: $flh-100;
+    color: $clr-accent-500;
+    margin-block: em($space-100);
+    display: flex;
+    align-items: center;
+    &--previous {
+      font-family: $ff-secondary;
+      font-size: calc(clamp(0.75rem, 0.063vw + 0.738rem, 0.813rem));
+      text-decoration: line-through;
+      margin-inline-start: em($space-150);
+      color: $clr-grey;
+      font-weight: 500;
+    }
+  }
+    &__btn::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/images/icon-cart.svg");
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline-end: em($space-075);
+  }
+  &__btn:is(:hover, :focus, :focus-visible) {
+    background-color: $clr-accent-700;
+  }
+  &__btn:focus-visible {
+    outline: 2px dashed $clr-accent-500;
+    outline-offset: 2px;
+  }
+}

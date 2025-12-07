@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <title>Frontend Mentor | Product preview card component</title>
 
@@ -15,22 +17,22 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="flex">
   <main>
     <div class="product container flex">
       <picture  class="product__img">
-        <source media="(min-width: 25em)" srcset="design/desktop-design.jpg">
-        <img src="design/mobile-design.jpg" alt="Perfume bottle laying on table with green leaves around">
+        <source media="(min-width: 36em)" srcset="images/image-product-desktop.jpg">
+        <img src="images/image-product-mobile.jpg" alt="Perfume bottle laying on table with green leaves around">
       </picture>
       <article class="product__content">
         <p class="product__type">Perfume</p>
         <h1 class="product__title" lang="fr">
           Gabrielle Essence Eau De Parfum
         </h1>
-        <p class="product__subtittle">
+        <p class="product__subtitle">
           A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <p class="product__price">$149.99<span class="product__price--previous">$169.99</span></p>
+        <p class="product__price" aria-label="Current price">$149.99<del class="product__price--previous" aria-label="Previous price $169.99">$169.99</del></p>
         <button class="product__btn btn">Add to Cart</button>
       </article>
     </div>
@@ -38,7 +40,7 @@
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/BabyYoda-bee-boop">BabyYoda-bee-boop</a>.
   </footer>
 </body>
 </html>
