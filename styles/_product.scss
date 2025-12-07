@@ -19,6 +19,7 @@ body {
   background-color: $clr-bg-card;
   overflow: hidden;
   max-width: 600px;
+  margin-block: em($space-250) * 2;
   
   @media (max-width: 36em) {
     flex-direction: column;

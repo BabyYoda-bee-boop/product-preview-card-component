@@ -47,6 +47,7 @@ body main {
   background-color: hsl(0, 0%, 100%);
   overflow: hidden;
   max-width: 600px;
+  margin-block: 5em;
 }
 @media (max-width: 36em) {
   .product {
