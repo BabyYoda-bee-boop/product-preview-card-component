@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here]()
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-product-card-picture-tag-sass-variables-wSqeAM5J8K)
 - Live Site URL: [Click here](https://babyyoda-bee-boop.github.io/product-preview-card-component/)
 
 ## My process
