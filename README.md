@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here]()
-- Live Site URL: [Click here](https://resonant-bublanina-e26d20.netlify.app/)
+- Live Site URL: [Click here](https://babyyoda-bee-boop.github.io/product-preview-card-component/)
 
 ## My process
 
